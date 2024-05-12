@@ -28,7 +28,7 @@ export default function Skills() {
                 <div className="container px-5 py-10 mx-auto flex flex-wrap">
                 <div className="flex flex-col w-full md:w-1/4">
                     {tabs.map((tab, index) => (
-                        <a href="skills"
+                        <a href="#skills"
                             key={index}
                             className={`cursor-pointer py-2 px-2 mb-2 text-lg rounded-xl mt-1 ${
                                 activeTab === tab.label ? "bg-gray-800" : "bg-gray-600"
