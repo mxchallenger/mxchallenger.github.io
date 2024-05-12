@@ -22,7 +22,7 @@ export default function Skills() {
                             Skills & Technologies
                         </h1>
                         <p className="leading-relaxed text-white">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            All the pretties.
                         </p>
                 </div>
                 <div className="container px-5 py-10 mx-auto flex flex-wrap">

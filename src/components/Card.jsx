@@ -29,18 +29,24 @@ const Card = ({ title, subtitle1, subtitle2, subtitle3, description, image, link
       {/* Display image or placeholder based on the condition */}
       {shouldDisplayImage ? (
         image ? (
-          <img src={image} alt={title} className="w-full h-40 object-cover rounded-t-lg" />
+          <img src={image} alt={title} className="w-full h-40 object-contain rounded-t-lg" />
         ) : (
           <div className="w-full h-40 bg-gray-200 rounded-t-lg"></div> // Placeholder if no image provided
         )
       ) : null}  {/* No image or placeholder for certification or volunteer categories */}
       
       <div>
-        <h2 className="text-xl font-semibold mb-2">{title}</h2>
+        <h2 className="text-2xl font-semibold mb-2 text-purple-600 pt-2">{title}</h2>
+        {category === 'work' && (
+          <div>
+          <h3 className="text-gray-600 text-base mb-2 font-semibold">{subtitle1}</h3>
+          <h3 className="text-gray-600 text-sm mb-2">{subtitle3}</h3>
+          </div>
+        )}
         {category === 'education' && (
           <div>
+            <h3 className="text-gray-600 text-base mb-1 font-semibold">{subtitle2}</h3>
             <h3 className="text-gray-600 text-sm mb-1">{subtitle1}</h3>
-            <h3 className="text-gray-600 text-sm mb-1">{subtitle2}</h3>
             <h3 className="text-gray-600 text-sm mb-2">{subtitle3}</h3>
           </div>
         )}
@@ -54,7 +60,7 @@ const Card = ({ title, subtitle1, subtitle2, subtitle3, description, image, link
         target="_blank"
         rel="noopener noreferrer"
         aria-label={`View project at ${title}`}
-        className="mt-4 py-2 px-4 bg-blue-600 text-white text-center text-sm rounded-md hover:bg-blue-700 focus:outline-none focus:bg-blue-700"
+        className="mt-4 py-2 px-4 bg-pink-600 text-white text-center text-sm rounded-md hover:bg-pink-700 focus:outline-none focus:bg-pink-700"
       >
         View Project
       </a>

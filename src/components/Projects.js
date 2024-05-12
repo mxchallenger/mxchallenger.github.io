@@ -9,12 +9,10 @@ export default function Projects() {
         <div className="flex flex-col w-full mb-20">
           <HiCode className="text-5xl mx-auto inline-block w-10 mb-4 text-blue-500" />
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-green-500">
-            Apps I've Built
+            Things I've Crafted
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-white">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-            facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
-            fuga dolore.
+            Whether it's a software challenge or a creative endeavor, I'm always up for a good project. Here are a few of my favorites!
           </p>
         </div>
         <div className="flex flex-wrap -m-4">

@@ -9,7 +9,11 @@ export default function About() {
       <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-yellow-300 text-left">
         Hi, I'm Margeaux.
       </h1>
+      <p className="text-sm italic text-yellow-300 text-left">
+        (pronounced mar•GO)
+      </p>
       <h2 className="title-font text-right sm:text-3xl ml-10 mb-4 font-medium">
+        <br className="hidden lg:inline-block"/>
         <span className="text-purple-500">
           Full-Stack Dev
           <HiCode className="w-6 h-6 inline-block ml-4" />
@@ -27,10 +31,9 @@ export default function About() {
       </h2>
       <br />
       <p className="mb-8 mr-20 leading-relaxed text-purple-200" style={{ maxWidth: "600px" }}>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-        laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
-        Laborum, voluptas natus?
+        I'm a full-stack developer who specializes in turning coffee into code and curiosity into solutions. Armed with a diverse tech stack, a PhD in Googling, and a Master's in figuring it out; I craft applications that are as functional as they are elegant. Off the clock, I'm not only coaching a tiny soccer team or tracing genealogies—I also dabble in graphic design, creating unique t-shirt designs and logos. It's just another way I love to solve creative puzzles!
       </p>
+
       <div className="flex justify-center">
         <a
           href="#resume"
