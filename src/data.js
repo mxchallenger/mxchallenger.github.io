@@ -140,7 +140,7 @@ export const resume = [
     description: "Full-Stack Apprenticeship Placement with Destiny Technologies Intl. Created a custom wordpress plugin and tranisitioned to full-time employment.",
     link: "https://www.hiringourheroes.org/",
     category: "work",
-    image: "https://www.roycegeo.com/wp-content/uploads/HOH.png"
+    image: "./HoH.png"
   },
   {
     title: "Google Data Analytics Specialization",
@@ -220,7 +220,7 @@ export const resume = [
     description: "Coursework included Informatics, Intro to Computer Science, Recreational Programming, Statistics, Labor, Outdoor Recreation, Management, ARC GIS, Marketing, Legal Issues, Research Methods, Event Planning, and more.",
     link: "https://www.indiana.edu",
     category: "education",
-    image: "https://www.iu.edu/images/brand/brand-expression/iu-trident-promo.jpg"
+    image: "./iub.png"
   },
   {
     title: "Volunteer Work",

@@ -16,7 +16,7 @@ export default function Resume() {
     };
   
     // Shuffle the resume data only once when the component is rendered
-    const shuffledResume = shuffleArray([...resume]); // Copy the resume array to avoid mutating the original data  
+    const shuffledResume = shuffleArray([...resume]);
   return (
     <section id="projects" className="text-green-500 bg-gray-900 body-font">
       <div className="container px-5 py-10 mx-auto text-center lg:px-40">
