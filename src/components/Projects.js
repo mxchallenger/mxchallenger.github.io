@@ -6,15 +6,18 @@ import Modal from 'react-modal';
 export default function Projects() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState("");
+  const [currentUrl, setCurrentUrl] = useState("");
 
-  const openModal = (image) => {
+  const openModal = (image, url) => {
     setCurrentImage(image);
+    setCurrentUrl(url)
     setModalIsOpen(true);
   };
 
   const closeModal = () => {
     setModalIsOpen(false);
     setCurrentImage("");
+    setCurrentUrl("");
   };
 
   return (
@@ -43,7 +46,7 @@ export default function Projects() {
             <div
               key={website.image}
               className="sm:w-1/2 w-100 p-4 group"
-              onClick={() => openModal(website.image)}
+              onClick={() => openModal(website.image, website.link)}
               style={{ cursor: "pointer" }}
             >
               <div className="flex relative">
@@ -129,7 +132,16 @@ export default function Projects() {
           <img src={currentImage} alt="Full size" className="max-w-full max-h-full object-contain" />
         </div>
         <div className="mt-4 p-2 border-t border-gray-400 text-white">
-          <p>Future content or buttons can be added here.</p>
+          {currentUrl && (
+            <a
+              href={currentUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            >
+              See it Live
+            </a>
+          )}
         </div>
       </Modal>
     </section>

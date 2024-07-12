@@ -21,7 +21,7 @@ export const websites = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
     image: "./project-3.gif",
-    link: "https://reactbootcamp.com",
+    link: "https://github.com/mxchallenger",
   },
   {
     title: "Epic Todo App",
@@ -29,7 +29,7 @@ export const websites = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
     image: "./project-4.gif",
-    link: "https://reactbootcamp.com",
+    link: "https://github.com/mxchallenger",
   },
 ];
 export const apps = [
@@ -124,7 +124,7 @@ export const resume = [
     subtitle2: "",
     subtitle3: "",
     description: "Head Coach for 6U Courage Cubs Girls team of 10 feral Red Pandas.",
-    link: "https://example.com",
+    link: "https://github.com/mxchallenger",
     category: "volunteer",
     // image: "./project-4.gif"
   },
@@ -204,7 +204,7 @@ export const resume = [
     subtitle2: "Description",
     subtitle3: "",
     description: "Received training in communication, resources, and support for military families. Provided support to 50+ families during deployments, emergencies, and other life events.",
-    link: "https://example.com",
+    link: "https://github.com/mxchallenger",
     category: "volunteer",
     // image: "./project-4.gif"
   },
@@ -254,7 +254,7 @@ export const resume = [
     subtitle2: "Description",
     subtitle3: "",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    link: "https://example.com",
+    link: "https://github.com/mxchallenger",
     category: "volunteer",
     // image: "./project-4.gif"
   },
@@ -264,7 +264,7 @@ export const resume = [
     subtitle2: "Location",
     subtitle3: "Dates",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    link: "https://example.com",
+    link: "https://github.com/mxchallenger",
     category: "work",
     // image: "./project-2.gif"
   },
