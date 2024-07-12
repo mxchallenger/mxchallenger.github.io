@@ -11,17 +11,19 @@ export const websites = [
     title: "React Weather App",
     subtitle: "Front-End React App & Axios",
     description:
-      "Simple weather app that allows users to select a city and measurement unit and get the current weather and 5-day forecast. Leverages the OpenWeatherMap API.",
+      "Simple weather app that allows users to select a city and measurement unit and get the current weather and 5-day forecast.",
     image: "./project-2.gif",
     link: "https://mxchallenger.github.io/weather-app/",
+    stack: "React, Axios & OpenWeatherMap API",
   },
   {
-    title: "DevChat",
-    subtitle: "React & Firebase",
+    title: "Sentinel Suite",
+    subtitle: "Wordpress Custom Plugin",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "Custom WordPress plugin for Destiny Technologies Intl., featuring custom tables, endpoints, and Microsoft Graph API integration. Manages business activities and employee data with custom reporting, user management, automated SharePoint report saving and email, payroll, and a tailored admin area. Integrates with an Expo/React Native mobile app.",
     image: "./project-3.gif",
     link: "https://github.com/mxchallenger",
+    stack: "Wordpress API, OAuth2.0, PHP, SMTP and Microsoft Graph API",
   },
   {
     title: "Epic Todo App",
@@ -32,14 +34,34 @@ export const websites = [
     link: "https://github.com/mxchallenger",
   },
 ];
+
 export const apps = [
   {
     title: "Sentinel-Suite",
     subtitle: "Expo Mobile App",
     description:
-      "A full-featured mobile application for tracking, managing and reporting on-site security patrols.",
+      "A full-featured mobile app for timekeeping, tracking, managing and reporting on-site security patrols.",
     image: "./mobile-app-1.gif",
     link: "https://github.com/mxchallenger",
+    stack: "Expo, React Native, Microsoft Graph API, Wordpress API",
+  },
+  {
+    title: "Sentinel-Suite",
+    subtitle: "Expo Mobile App",
+    description:
+      "A full-featured mobile app for timekeeping, tracking, managing and reporting on-site security patrols.",
+    image: "./mobile-app-1.gif",
+    link: "https://github.com/mxchallenger",
+    stack: "Expo, React Native, Microsoft Graph API, Wordpress API",
+  },
+  {
+    title: "Sentinel-Suite",
+    subtitle: "Expo Mobile App",
+    description:
+      "A full-featured mobile app for timekeeping, tracking, managing and reporting on-site security patrols.",
+    image: "./mobile-app-1.gif",
+    link: "https://github.com/mxchallenger",
+    stack: "Expo, React Native, Microsoft Graph API, Wordpress API",
   },
 ];
 
@@ -243,7 +265,7 @@ export const resume = [
     subtitle1: "Bloomington, IN",
     subtitle2: "B.S. Recreation x 2",
     subtitle3: "Graduated Dec 2007",
-    description: "Coursework included Informatics, Intro to Computer Science, Recreational Programming, Statistics, Labor, Outdoor Recreation, Management, ARC GIS, Marketing, Legal Issues, Research Methods, Event Planning, and more.",
+    description: "Coursework included Informatics, Intro to Computer Science, Recreational Planning, Statistics, Labor Studies, Outdoor Recreation, Management, ARC GIS, Marketing, Legal Issues, Research Methods, Event Planning, and more.",
     link: "https://www.indiana.edu",
     category: "education",
     image: "./iub.png"
