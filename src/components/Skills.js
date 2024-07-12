@@ -13,7 +13,6 @@ export default function Skills() {
     const [activeTab, setActiveTab] = useState(tabs[0].label);
 
     return (
-        //Skills Section
         <section id="skills" className="bg-gray-900 text-yellow-400">
             <div className="container px-5 py-10 mx-auto">
                 <div className="text-center mb-5">

@@ -45,6 +45,11 @@ export default function About() {
           className="ml-4 inline-flex text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-500 hover:text-white rounded text-lg">
           Past Projects
         </a>
+        <a
+          href="https://github.com/mxchallenger"
+          className="ml-4 inline-flex text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-500 hover:text-white rounded text-lg">
+          GitHub
+        </a>
       </div>
     </div>
     <div className="lg:flex-grow md:w-1/4 lg:pr-6 items-right text-left flex flex-col md:items-end md:text-left mb-16 md:mb-0 items-right text-center">

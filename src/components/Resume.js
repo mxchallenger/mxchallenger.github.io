@@ -18,7 +18,7 @@ export default function Resume() {
     // Shuffle the resume data only once when the component is rendered
     const shuffledResume = shuffleArray([...resume]);
   return (
-    <section id="projects" className="text-green-500 bg-gray-900 body-font">
+    <section id="experience" className="text-green-500 bg-gray-900 body-font">
       <div className="container px-5 py-10 mx-auto text-center lg:px-40">
         <div className="flex flex-col w-full mb-20">
           <HiBriefcase className="text-5xl mx-auto inline-block w-10 mb-4 text-purple-500" />

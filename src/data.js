@@ -1,4 +1,4 @@
-export const projects = [
+export const websites = [
   {
     title: "Hotel Booking App",
     subtitle: "Front-End React App",
@@ -8,16 +8,16 @@ export const projects = [
     link: "https://github.com/mxchallenger",
   },
   {
-    title: "React Tracks",
-    subtitle: "React and Python",
+    title: "React Weather App",
+    subtitle: "Front-End React App & Axios",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "Simple weather app that allows users to select a city and measurement unit and get the current weather and 5-day forecast. Leverages the OpenWeatherMap API.",
     image: "./project-2.gif",
-    link: "https://reactbootcamp.com",
+    link: "https://mxchallenger.github.io/weather-app/",
   },
   {
     title: "DevChat",
-    subtitle: "React and Firebase",
+    subtitle: "React & Firebase",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
     image: "./project-3.gif",
@@ -32,17 +32,27 @@ export const projects = [
     link: "https://reactbootcamp.com",
   },
 ];
+export const apps = [
+  {
+    title: "Sentinel-Suite",
+    subtitle: "Expo Mobile App",
+    description:
+      "A full-featured mobile application for tracking, managing and reporting on-site security patrols.",
+    image: "./mobile-app-1.gif",
+    link: "https://github.com/mxchallenger",
+  },
+];
 
 
 export const languages = [
   "JavaScript",
   "C#",
   "PHP",
-  "React",
   "SQL: MySQL, PostgreSQL",
-  "HTML/CSS",
+  "HTML",
   "Python",
   "R",
+  "CSS",
 ];
 
 export const frames = [
@@ -69,6 +79,10 @@ export const tools = [
   "Jira",
   "Trello",
   "Monday",
+  "App Store Connect",
+  "Expo Developer Tools",
+  "Google Play Console",
+  "Test Flight",
 ];
 
 export const certs = [
@@ -89,6 +103,8 @@ export const skills = [
   "Collaboration",
   "Critical Thinking",
   "Detail Oriented",
+  "External API Integration",
+  "OAuth2.0 Integration",
 ];
 
 export const resume = [
@@ -175,7 +191,7 @@ export const resume = [
   {
     title: "Youth Sports Director",
     subtitle1: "US Air Force",
-    subtitle2: "Minot, ND",
+    subtitle2: "Minot AFB, ND",
     subtitle3: "01/2011 - 10/2011",
     description: "Led the programming, scheduling, registration, and execution of youth sports programs for 200+ children. Managed a fleet of volunteer coaches and coached all under 4 sports programs.",
     link: "https://5thforcesupport.com/",
@@ -197,7 +213,17 @@ export const resume = [
     subtitle1: "PTCB",
     subtitle2: "Location",
     subtitle3: "Dates",
-    description: "Nov 2011 - Mar 2013",
+    description: "Nov 2011 - Nov 2013",
+    link: "https://www.ptcb.org/credentials/certified-pharmacy-technician",
+    category: "certification",
+    // image: "./project-1.gif"
+  },
+  {
+    title: "CPR/First Aid Instructor",
+    subtitle1: "American Red Cross",
+    subtitle2: "Location",
+    subtitle3: "Dates",
+    description: "Jul 2011 - Jul 2013",
     link: "https://www.ptcb.org/credentials/certified-pharmacy-technician",
     category: "certification",
     // image: "./project-1.gif"

@@ -12,21 +12,21 @@ export default function Contact() {
               CONTACT ME
             </h2>
             <div className="mt-4">
-              <a href="mailto:margeaux@email.com" className="text-pink-500 leading-relaxed flex items-center">
+              <a href="mailto:margeaux@gmail.com" className="text-pink-500 leading-relaxed flex items-center">
                 <MdEmail className="w-6 h-6 inline-block mr-2" />
-                <span>margeaux@email.com</span>
+                <span>Email</span>
               </a>
             </div>
             <div className="mt-4">
               <a href="https://github.com/mxchallenger" className="text-pink-400 leading-relaxed flex items-center">
                 <FaGithub className="w-6 h-6 inline-block mr-2" />
-                <span>Github Profile</span>
+                <span>Github</span>
               </a>
             </div>
             <div className="mt-4">
               <a href="https://www.linkedin.com/in/mxchallenger/" className="text-pink-300 leading-relaxed flex items-center">
                 <FaLinkedin className="w-6 h-6 inline-block mr-2" />
-                <span>LinkedIn Profile</span>
+                <span>LinkedIn</span>
               </a>
             </div>
           </div>
