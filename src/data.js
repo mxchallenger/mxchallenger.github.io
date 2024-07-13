@@ -135,8 +135,8 @@ export const resume = [
     subtitle1: "Destiny Technologies Intl.",
     subtitle2: "Remote",
     subtitle3: "Feb 2023 - Present",
-    description: "Responsible for architecting and developing a custom wordpress plugin, an Expo/React Native mobile app, and multiple Wordpress deployed websites.",
-    link: "https://ewcgi.com",
+    description: "Responsible for architecting and developing a comprehensive custom wordpress plugin, an Expo/React Native mobile app, and maintain all Wordpress deployed websites.",
+    link: "https://destinytech.org",
     category: "work",
     image: "http://destinytech.org/wp-content/uploads/2023/02/Destiny-Tech-Horizontal-Large-3.png"
   },
@@ -146,7 +146,7 @@ export const resume = [
     subtitle2: "",
     subtitle3: "",
     description: "Head Coach for 6U Courage Cubs Girls team of 10 feral Red Pandas.",
-    link: "https://github.com/mxchallenger",
+    link: "https://www.pwsi.org/",
     category: "volunteer",
     // image: "./project-4.gif"
   },
@@ -162,13 +162,13 @@ export const resume = [
   },
   {
     title: "Catalyte",
-    subtitle1: "Online Course",
-    subtitle2: "Duration",
-    subtitle3: "Dates",
+    // subtitle1: "Remote",
+    subtitle2: "Remote",
+    subtitle3: "Jan 2022 - Jun 2022",
     description: "Full-Stack Software Development Training Program. 1000+ hours of training in software development, creating applications, and working in a team environment.",
     link: "https://www.catalyte.io",
-    category: "certification",
-    // image: "./project-3.gif"
+    category: "education",
+    image: "https://media.licdn.com/dms/image/D4E0BAQFuM2O23R1P-w/company-logo_200_200/0/1681240366476/catalyteio_logo?e=1723680000&v=beta&t=7vnfnfXvZ2DFXs_KubOphxMy5k2AeR5AErUdaV8bsy0"
   },
   {
     title: "Software Fellow",
@@ -223,10 +223,10 @@ export const resume = [
   {
     title: "Key Spouse",
     subtitle1: "Kadena AB, Japan",
-    subtitle2: "Description",
+    subtitle2: "",
     subtitle3: "",
     description: "Received training in communication, resources, and support for military families. Provided support to 50+ families during deployments, emergencies, and other life events.",
-    link: "https://github.com/mxchallenger",
+    link: "https://www.militaryonesource.mil/resources/training/air-force-key-spouse-program-courses/",
     category: "volunteer",
     // image: "./project-4.gif"
   },
@@ -246,7 +246,7 @@ export const resume = [
     subtitle2: "Location",
     subtitle3: "Dates",
     description: "Jul 2011 - Jul 2013",
-    link: "https://www.ptcb.org/credentials/certified-pharmacy-technician",
+    link: "https://www.redcross.org/",
     category: "certification",
     // image: "./project-1.gif"
   },
@@ -280,16 +280,16 @@ export const resume = [
     category: "volunteer",
     // image: "./project-4.gif"
   },
-  {
-    title: "Frontend Developer",
-    subtitle1: "XYZ Inc.",
-    subtitle2: "Location",
-    subtitle3: "Dates",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    link: "https://github.com/mxchallenger",
-    category: "work",
-    // image: "./project-2.gif"
-  },
+  // {
+  //   title: "Frontend Developer",
+  //   subtitle1: "XYZ Inc.",
+  //   subtitle2: "Location",
+  //   subtitle3: "Dates",
+  //   description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+  //   link: "https://github.com/mxchallenger",
+  //   category: "work",
+  //   // image: "./project-2.gif"
+  // },
   // Add more test data here...
 ];
 

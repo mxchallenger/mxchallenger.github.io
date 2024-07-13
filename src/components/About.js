@@ -32,7 +32,7 @@ export default function About() {
               </span>
             </h2>
             <p className="mt-8 leading-relaxed text-purple-200 max-w-md mx-auto md:mx-0">
-              I'm a full-stack developer who specializes in turning coffee into code and curiosity into solutions. Armed with a diverse tech stack, a PhD in Googling, and a Master's in figuring it out; I craft applications that are as functional as they are elegant. Off the clock, I'm not only coaching a tiny soccer team or tracing genealogies—I also dabble in graphic design, creating unique t-shirt designs and logos. It's just another way I love to solve creative puzzles!
+              I'm a full-stack developer who specializes in turning coffee into code and curiosity into solutions. Armed with a diverse tech stack, a PhD in Googling, and a Master's in figuring it out; I craft applications that are as functional as they are elegant. Off the clock, I can be found coaching a tiny soccer team, building furniture or tracing genealogies—I also dabble in graphic design, creating professional t-shirt designs and logos. It's just another way I love to solve creative puzzles!
             </p>
           </div>
           {/* Right Column */}
