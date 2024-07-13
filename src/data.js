@@ -195,7 +195,7 @@ export const resume = [
     subtitle1: "Trinity Hospital",
     subtitle2: "Minot, ND",
     subtitle3: "10/2011 - 2/2013",
-    description: "Attained certification to prepare and administer IV medications to patients in a hospital setting. Also responsible for packaging, labeling, and delivering medications.",
+    description: "Certified to prepare IV medications in a sterile environment; package, label and securely deliver medications under pharmacist supervision.",
     link: "https://trinityhealth.org",
     category: "work",
     image: "https://www.trinityhealth.org/wp-content/uploads/2018/09/trinity-health-logo.svg"
@@ -271,15 +271,25 @@ export const resume = [
     image: "./iub.png"
   },
   {
-    title: "Volunteer Work",
-    subtitle1: "Local Charity",
-    subtitle2: "Description",
-    subtitle3: "",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    link: "https://github.com/mxchallenger",
-    category: "volunteer",
-    // image: "./project-4.gif"
+    title: "Publication",
+    subtitle1: "Beanballs - An Inherent Risk in Baseball",
+    subtitle2: "JOPERD",
+    subtitle3: "2007 Law Review",
+    description: "Published article explaining the Supreme Court ruling alleviating liability in baseball organizations.",
+    link: "https://doi.org/10.1080/07303084.2007.10597996",
+    category: "education",
+    image: "https://www.tandfonline.com/action/showCoverImage?doi=10.1080/ujrd20.v078.i04"
   },
+  // {
+  //   title: "Volunteer Work",
+  //   subtitle1: "Local Charity",
+  //   subtitle2: "Description",
+  //   subtitle3: "",
+  //   description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+  //   link: "https://github.com/mxchallenger",
+  //   category: "volunteer",
+  //   // image: "./project-4.gif"
+  // },
   // {
   //   title: "Frontend Developer",
   //   subtitle1: "XYZ Inc.",
