@@ -1,11 +1,10 @@
 export const websites = [
   {
-    title: "Hotel Booking App",
-    subtitle: "Front-End React App",
-    description:
-      "A simple front-end React app that allows users to book a hotel room and provides a room management screen for staff.",
-    image: "./project-1.gif",
-    link: "https://github.com/mxchallenger",
+    "title": "Haunted Hotel Booking App",
+    "subtitle": "Full-Stack React with Supabase",
+    "description": "A full-stack React app for hotel room booking and management, featuring form validation, dynamic image display, and cost calculations based on room rates. Backend powered by Supabase.",
+    "image": "./project-1.gif",
+    "link": "https://mxchallenger.github.io/HauntedHotel/"
   },
   {
     title: "React Weather App",
