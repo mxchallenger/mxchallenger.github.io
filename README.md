@@ -1,4 +1,5 @@
 # Build or Rebuild and deploy to Github Pages
+0. Start server with `npm start`
 1. Commit and push to main branch
 2. Build the project with `npm run build`
 3. Deploy to Github Pages with `npm run deploy`

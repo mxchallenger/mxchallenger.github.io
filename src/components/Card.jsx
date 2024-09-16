@@ -1,6 +1,19 @@
 import React from 'react';
 
-const Card = ({ title, subtitle1, subtitle2, subtitle3, description, image, link, category }) => {
+const Card = ({ title, organization, location, degree, dates, description, image, link, category }) => {
+  const [isExpanded, setIsExpanded] = React.useState(false);
+
+  const toggleExpand = () => {
+    setIsExpanded(!isExpanded);
+  };
+
+  const truncateDescription = (text, limit) => {
+    if (text.length <= limit) {
+      return text;
+    }
+    return text.slice(0, limit) + '...';  // Truncate and add ellipsis
+  };
+  
   let bgColorClass = '';
 
   switch (category) {
@@ -21,54 +34,59 @@ const Card = ({ title, subtitle1, subtitle2, subtitle3, description, image, link
       break;
   }
 
-  // Determine if the category should display an image or a placeholder
-  const shouldDisplayImage = category !== 'certification' && category !== 'volunteer';
-  
+  // Set the description length limit for the condensed version
+  const descriptionLimit = 100;
+
   return (
     <div className={`rounded-lg shadow-md ${bgColorClass} p-4 h-auto flex flex-col justify-between card-min-height`}>
       {/* Display image or placeholder based on the condition */}
-      {shouldDisplayImage ? (
-        image ? (
-          <img src={image} alt={title} className="w-full h-40 object-contain rounded-t-lg" />
-        ) : (
-          <div className="w-full h-40 bg-gray-200 rounded-t-lg"></div> // Placeholder if no image provided
-        )
-      ) : null}  {/* No image or placeholder for certification or volunteer categories */}
+      {image && !isExpanded ? (
+        <img src={image} alt={title} className="w-full h-40 object-contain rounded-t-lg" />
+      ) : null}
       
       <div>
         <h2 className="text-2xl font-semibold mb-2 text-purple-600 pt-2">{title}</h2>
-        {category === 'work' && (
-          <div>
-          <h3 className="text-gray-600 text-base mb-2 font-semibold">{subtitle1}</h3>
-          <h3 className="text-gray-600 text-sm mb-2">{subtitle3}</h3>
+        {organization && <h3 className="text-gray-600 text-base mb-2 font-semibold">{organization}</h3>}
+        {location && <p className="text-gray-600 text-sm mb-2">{location}</p>}
+        {degree && <p className="text-gray-600 text-sm mb-2">{degree}</p>}
+        {dates && <p className="text-gray-600 text-sm mb-2">{dates}</p>}
+
+        {/* Condensed description when not expanded, full description when expanded */}
+        <p className="text-gray-800">
+          {isExpanded ? description : truncateDescription(description, descriptionLimit)}
+        </p>
+
+        {isExpanded && (
+          <div className="mt-4">
+            {image && (
+              <img
+                src={image}
+                alt={title}
+                className="mt-4 w-full h-auto object-contain rounded-lg"
+              />
+            )}
+
+            {link && (
+              <a
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 block text-pink-500 hover:underline"
+              >
+                {organization ? `Learn more about ${organization}` : `Learn more`}
+              </a>
+            )}
           </div>
         )}
-        {category === 'education' && (
-          <div>
-            <h3 className="text-gray-600 text-base mb-1 font-semibold">{subtitle2}</h3>
-            <h3 className="text-gray-600 text-sm mb-1">{subtitle1}</h3>
-            <h3 className="text-gray-600 text-sm mb-2">{subtitle3}</h3>
-          </div>
-        )}
-        {category === 'volunteer' && (
-          <h3 className="text-gray-600 text-sm mb-2">{subtitle1}</h3>
-        )}
-        {category === 'certification' && (
-          <div>
-            <h3 className="text-gray-600 text-base mb-1 font-semibold">{subtitle1}</h3>
-          </div>
-        )}
-        <p className="text-gray-800">{description}</p>
       </div>
-      <a
-        href={link}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label={`More Information at ${title}`}
-        className="mt-4 py-2 px-4 bg-pink-600 text-white text-center text-sm rounded-md hover:bg-pink-700 focus:outline-none focus:bg-pink-700"
+
+      {/* Toggle Button */}
+      <button
+        onClick={toggleExpand}
+        className="mt-4 py-2 px-4 bg-purple-600 text-white text-center text-sm rounded-md hover:bg-purple-700 focus:outline-none focus:bg-purple-700"
       >
-        More Info
-      </a>
+        {isExpanded ? 'Show Less' : 'More Info'}
+      </button>
     </div>
   );
 };

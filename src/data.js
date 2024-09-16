@@ -44,26 +44,63 @@ export const apps = [
     link: "https://github.com/mxchallenger",
     stack: "Expo, React Native, Microsoft Graph API, Wordpress API",
   },
-  {
-    title: "Sentinel-Suite",
-    subtitle: "Expo Mobile App",
-    description:
-      "A full-featured mobile app for timekeeping, tracking, managing and reporting on-site security patrols.",
-    image: "./mobile-app-1.gif",
-    link: "https://github.com/mxchallenger",
-    stack: "Expo, React Native, Microsoft Graph API, Wordpress API",
-  },
-  {
-    title: "Sentinel-Suite",
-    subtitle: "Expo Mobile App",
-    description:
-      "A full-featured mobile app for timekeeping, tracking, managing and reporting on-site security patrols.",
-    image: "./mobile-app-1.gif",
-    link: "https://github.com/mxchallenger",
-    stack: "Expo, React Native, Microsoft Graph API, Wordpress API",
-  },
 ];
 
+export const graphics = [
+  {
+    title: "Military Flight Branding Logo",
+    subtitle: "Expo Mobile App",
+    description:
+      "Created for squadron branding for the 318th Recruiting Squadron.",
+    image: "./graphic-dagger.png",
+    stack: "Expo, React Native, Microsoft Graph API, Wordpress API",
+  },
+  {
+    title: "Military Flight Branding Logo",
+    subtitle: "Expo Mobile App",
+    description:
+      "Created for squadron branding for the 318th Recruiting Squadron.",
+    image: "./graphic-firebird.png",
+    stack: "Expo, React Native, Microsoft Graph API, Wordpress API",
+  },
+  {
+    title: "Mobile App Graphics",
+    description:
+      "Created an assortment of graphics for mobile app development and store release.",
+    image: "./graphic-mobile-app.png",
+  },
+  {
+    title: "Small Business Logo",
+    subtitle: "Expo Mobile App",
+    description:
+      "Created for a client for their small business website launch.",
+    image: "./graphic-handcrafted.png",
+  },
+  {
+    title: "Custom Event Invites",
+    description:
+      "Created for a friend for their birthday party invites.",
+    image: "./graphic-birthday.png",
+  },
+  {
+    title: "Custom Baby Blanket",
+    description:
+      "Print On Demand client commission for custom baby blanket, printed at 30x40\". Created custom vectors and palettes along with geographically relevant design concepts.",
+    image: "./graphic-hazel.png",
+  },
+  {
+    title: "Custom Baby Blanket",
+    description:
+      "Print On Demand client commission for custom baby blanket, printed at 30x40\". Created custom vectors and palettes along with geographically relevant design concepts.",
+    image: "./graphic-abigail.png",
+  },
+  {
+    title: "Web and Social Media Graphics",
+    description:
+      "Web graphics for client website and social media.",
+    image: "./graphic-ranger.png",
+  },
+];
 
 export const languages = [
   "JavaScript",
@@ -131,139 +168,135 @@ export const skills = [
 export const resume = [
   {
     title: "Lead Developer",
-    subtitle1: "Destiny Technologies Intl.",
-    subtitle2: "Remote",
-    subtitle3: "Feb 2023 - Present",
+    organization: "Destiny Technologies Intl.",
+    location: "Remote",
+    dates: "Feb 2023 - Present",
     description: "Responsible for architecting and developing a comprehensive custom wordpress plugin, an Expo/React Native mobile app, and maintain all Wordpress deployed websites.",
     link: "https://destinytech.org",
     category: "work",
     image: "http://destinytech.org/wp-content/uploads/2023/02/Destiny-Tech-Horizontal-Large-3.png"
   },
   {
-    title: "Prince William Soccer Inc.",
-    subtitle1: "Fall 2023/Spring 2024",
-    subtitle2: "",
-    subtitle3: "",
+    title: "Key Support Liaison",
+    organization: "US Air Force",
+    dates: "2024",
+    description: "Key Support Liaison for the 318th Recruiting Squadron. Serve as a focal point for communication and advocate for families.",
+    link: "https://www.afpc.af.mil/Military-and-Family/Commanders-Key-Support-Program/",
+    category: "volunteer",
+  },
+  {
+    title: "Head Soccer Coach",
+    organization: "Prince William Soccer Inc.",
+    dates: "Fall 2023 - Present",
     description: "Head Coach for 6U Courage Cubs Girls team of 10 feral Red Pandas.",
     link: "https://www.pwsi.org/",
     category: "volunteer",
-    // image: "./project-4.gif"
+    image: "./volunteer-pandas.png"
   },
   {
     title: "Software Apprentice",
-    subtitle1: "Catalyte",
-    subtitle2: "Remote",
-    subtitle3: "Jan 2022 - Jun 2022",
+    organization: "Catalyte",
+    location: "Remote",
+    dates: "Jan 2022 - Jun 2022",
     description: "Created a full-stack application using React, C#, .NET, Node.js, and PostgreSQL. Worked in a team environment to develop an e-commerce website with Agile processes.",
     link: "https://catalyte.io",
     category: "work",
-    image: "https://media.licdn.com/dms/image/D4E0BAQFuM2O23R1P-w/company-logo_200_200/0/1681240366476/catalyteio_logo?e=1723680000&v=beta&t=7vnfnfXvZ2DFXs_KubOphxMy5k2AeR5AErUdaV8bsy0"
+    image: "./catalyte.jpg"
   },
   {
-    title: "Catalyte",
-    // subtitle1: "Remote",
-    subtitle2: "Remote",
-    subtitle3: "Jan 2022 - Jun 2022",
+    title: "Full-Stack Software Development Training",
+    organization: "Catalyte",
+    location: "Remote",
+    dates: "Jan 2022 - Jun 2022",
     description: "Full-Stack Software Development Training Program. 1000+ hours of training in software development, creating applications, and working in a team environment.",
     link: "https://www.catalyte.io",
     category: "education",
-    image: "https://media.licdn.com/dms/image/D4E0BAQFuM2O23R1P-w/company-logo_200_200/0/1681240366476/catalyteio_logo?e=1723680000&v=beta&t=7vnfnfXvZ2DFXs_KubOphxMy5k2AeR5AErUdaV8bsy0"
+    image: "./catalyte.jpg"
   },
   {
     title: "Software Fellow",
-    subtitle1: "Hiring Our Heroes",
-    subtitle2: "Location",
-    subtitle3: "Feb 2023 - Jun 2023",
-    description: "Full-Stack Apprenticeship Placement with Destiny Technologies Intl. Created a custom wordpress plugin and tranisitioned to full-time employment.",
+    organization: "Hiring Our Heroes",
+    location: "Remote",
+    dates: "Feb 2023 - Jun 2023",
+    description: "Full-Stack Apprenticeship Placement with Destiny Technologies Intl. Created a custom wordpress plugin and transitioned to full-time employment.",
     link: "https://www.hiringourheroes.org/",
     category: "work",
     image: "./HoH.png"
   },
   {
     title: "Google Data Analytics Specialization",
-    subtitle1: "Coursera",
-    subtitle2: "8 Course Professional Certificate",
-    subtitle3: "Sept 2022 - Jan 2023",
+    organization: "Coursera",
+    certification: "8 Course Professional Certificate",
+    dates: "Sept 2022 - Jan 2023",
     description: "Relevant coursework: Foundations: Data, Data Cleaning, Data Analysis, Data Visualization, Google Sheets, SQL, R, Tableau, and Capstone Project.",
     link: "https://www.coursera.org/professional-certificates/google-data-analytics",
     category: "certification",
-    // image: "./project-3.gif"
+    image: "./coursera.png"
   },
   {
     title: "Certified IV Technician (CPhT)",
-    subtitle1: "Trinity Hospital",
-    subtitle2: "Minot, ND",
-    subtitle3: "10/2011 - 2/2013",
-    description: "Certified to prepare IV medications in a sterile environment; package, label and securely deliver medications under pharmacist supervision.",
+    organization: "Trinity Hospital",
+    location: "Minot, ND",
+    dates: "Oct 2011 - Feb 2013",
+    description: "Nationally certified to prepare IV medications in a sterile environment; package, label and securely deliver medications under pharmacist supervision.",
     link: "https://trinityhealth.org",
     category: "work",
     image: "https://www.trinityhealth.org/wp-content/uploads/2018/09/trinity-health-logo.svg"
   },
   {
     title: "Introduction to Python",
-    subtitle1: "DataCamp",
-    subtitle2: "Duration",
-    subtitle3: "Dates",
-    description: "Completed July 2022",
+    organization: "DataCamp",
+    dates: "Completed July 2022",
+    description: "Introduction to Python course.",
     link: "https://www.datacamp.com/",
     category: "certification",
-    // image: "./project-3.gif"
+    image: "./datacamp.png"
   },
   {
-    title: "Youth Sports Director",
-    subtitle1: "US Air Force",
-    subtitle2: "Minot AFB, ND",
-    subtitle3: "01/2011 - 10/2011",
-    description: "Led the programming, scheduling, registration, and execution of youth sports programs for 200+ children. Managed a fleet of volunteer coaches and coached all under 4 sports programs.",
+    title: "Youth Sports Director NF-III",
+    organization: "US Air Force",
+    location: "Minot AFB, ND",
+    dates: "Jan 2011 - Oct 2011",
+    description: "Led the programming, scheduling, registration, and execution of youth sports programs for 200+ children. Managed a fleet of volunteer coaches and coached all under-4 sports programs.",
     link: "https://5thforcesupport.com/",
     category: "work",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/US_Air_Force_Logo_-_Black_and_White_Version.svg/1024px-US_Air_Force_Logo_-_Black_and_White_Version.svg.png"
   },
   {
     title: "Key Spouse",
-    subtitle1: "Kadena AB, Japan",
-    subtitle2: "",
-    subtitle3: "",
+    organization: "Kadena AB, Japan",
     description: "Received training in communication, resources, and support for military families. Provided support to 50+ families during deployments, emergencies, and other life events.",
     link: "https://www.militaryonesource.mil/resources/training/air-force-key-spouse-program-courses/",
     category: "volunteer",
-    // image: "./project-4.gif"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/US_Air_Force_Logo_-_Black_and_White_Version.svg/1024px-US_Air_Force_Logo_-_Black_and_White_Version.svg.png"
   },
   {
     title: "Certified Pharmacy Technician (CPhT)",
-    subtitle1: "PTCB",
-    subtitle2: "Location",
-    subtitle3: "Dates",
+    organization: "Pharmacy Technician Certification Board",
     description: "Nov 2011 - Nov 2013",
     link: "https://www.ptcb.org/credentials/certified-pharmacy-technician",
     category: "certification",
-    // image: "./project-1.gif"
   },
   {
     title: "CPR/First Aid Instructor",
-    subtitle1: "American Red Cross",
-    subtitle2: "Location",
-    subtitle3: "Dates",
+    organization: "American Red Cross",
     description: "Jul 2011 - Jul 2013",
     link: "https://www.redcross.org/",
     category: "certification",
-    // image: "./project-1.gif"
   },
   {
     title: "Certified Youth Sports Administrator",
-    subtitle1: "National Alliance for Youth Sports",
-    subtitle2: "Duration",
-    subtitle3: "Dates",
-    description: "July 2011 - July 2013",
+    organization: "National Alliance for Youth Sports",
+    dates: "Jul 2011 - Jul 2013",
+    description: "Certified Youth Sports Administrator program.",
     link: "https://www.nays.org/become-a-cysa",
     category: "certification",
-    // image: "./project-3.gif"
   },
   {
-    title: "Indiana University",
-    subtitle1: "Bloomington, IN",
-    subtitle2: "B.S. Recreation x 2",
-    subtitle3: "Graduated Dec 2007",
+    title: "B.S. Recreation",
+    organization: "Indiana University",
+    degree: "B.S. Recreation - Park and Recreation Mangement & B.S. Recreation - Tourism Management",
+    dates: "Graduated Dec 2007",
     description: "Coursework included Informatics, Intro to Computer Science, Recreational Planning, Statistics, Labor Studies, Outdoor Recreation, Management, ARC GIS, Marketing, Legal Issues, Research Methods, Event Planning, and more.",
     link: "https://www.indiana.edu",
     category: "education",
@@ -271,35 +304,14 @@ export const resume = [
   },
   {
     title: "Publication",
-    subtitle1: "Beanballs - An Inherent Risk in Baseball",
-    subtitle2: "JOPERD",
-    subtitle3: "2007 Law Review",
+    organization: "Beanballs - An Inherent Risk in Baseball",
+    location: "JOPERD",
+    dates: "2007 Law Review",
     description: "Published article explaining the Supreme Court ruling alleviating liability in baseball organizations.",
     link: "https://doi.org/10.1080/07303084.2007.10597996",
     category: "education",
     image: "https://www.tandfonline.com/action/showCoverImage?doi=10.1080/ujrd20.v078.i04"
   },
-  // {
-  //   title: "Volunteer Work",
-  //   subtitle1: "Local Charity",
-  //   subtitle2: "Description",
-  //   subtitle3: "",
-  //   description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-  //   link: "https://github.com/mxchallenger",
-  //   category: "volunteer",
-  //   // image: "./project-4.gif"
-  // },
-  // {
-  //   title: "Frontend Developer",
-  //   subtitle1: "XYZ Inc.",
-  //   subtitle2: "Location",
-  //   subtitle3: "Dates",
-  //   description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-  //   link: "https://github.com/mxchallenger",
-  //   category: "work",
-  //   // image: "./project-2.gif"
-  // },
-  // Add more test data here...
 ];
 
 

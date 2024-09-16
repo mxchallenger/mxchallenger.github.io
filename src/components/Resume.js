@@ -49,16 +49,17 @@ export default function Resume() {
             columnsCount={3}
             gutter="25px">
             {shuffledResume.map((item, index) => (
-              <Card 
-                key={index}
-                title={item.title}
-                subtitle1={item.subtitle1}
-                subtitle2={item.subtitle2}
-                subtitle3={item.subtitle3}
-                description={item.description}
-                image={item.image}
-                link={item.link}
-                category={item.category}
+              <Card
+              key={index}
+              title={item.title}
+              organization={item.organization}  // Ensure this is being passed
+              location={item.location}
+              degree={item.degree}
+              dates={item.dates}
+              description={item.description}
+              image={item.image}
+              link={item.link}
+              category={item.category}
               />
             ))}
           </Masonry>

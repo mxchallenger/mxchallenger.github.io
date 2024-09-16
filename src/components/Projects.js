@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { websites, apps } from "../data";
+import { websites, apps, graphics } from "../data";
 import { HiCode } from "react-icons/hi";
 import Modal from 'react-modal';
 
@@ -36,7 +36,6 @@ export default function Projects() {
           <p className="lg mx-auto leading-relaxed text-base text-white">
             Whether it's a software challenge, building furniture or a creative endeavor, I'm always up for a good project.
           </p>
-          <HiCode className="text-5xl mx-auto inline-block w-10 text-blue-500" />
         </div>
         <div className="flex flex-col text-left w-full mt-20 mb-10">
           <h1 className="sm:text-2xl font-medium title-font mb-4 text-pink-500">
@@ -82,30 +81,69 @@ export default function Projects() {
           </p>
         </div>
         <div className="flex flex-wrap -m-4">
-  {apps.map((app) => (
-    <div
-      key={app.image}
-      className="lg:w-1/4 sm:w-1/3 w-full p-2 group"
-      onClick={() => openModal(app.image)}
-      style={{ cursor: "pointer" }}
-    >
-      <div className="flex relative min-h-80">
-        <img
-          alt="gallery"
-          className="absolute inset-0 w-full h-full object-cover object-center opacity-0 group-hover:opacity-100"
-          src={app.image}
-        />
-        <div className="absolute inset-0 px-6 py-6 z-10 w-full h-full border-4 border-gray-800 bg-gray-900 group-hover:opacity-0">
-          <h1 className="title-font text-lg font-medium text-yellow-400 mb-3">
-            {app.title}
+          {apps.map((app) => (
+            <div
+              key={app.image}
+              className="lg:w-1/4 sm:w-1/3 w-full p-2 group"
+              onClick={() => openModal(app.image)}
+              style={{ cursor: "pointer" }}
+            >
+              <div className="flex relative min-h-80">
+                <img
+                  alt="gallery"
+                  className="absolute inset-0 w-full h-full object-cover object-center opacity-0 group-hover:opacity-100"
+                  src={app.image}
+                />
+                <div className="absolute inset-0 px-6 py-6 z-10 w-full h-full border-4 border-gray-800 bg-gray-900 group-hover:opacity-0">
+                  <h1 className="title-font text-lg font-medium text-yellow-400 mb-3">
+                    {app.title}
+                  </h1>
+                  <p className="text-purple-200 leading-relaxed text-left">{app.description}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="flex flex-col text-left w-full mt-20 mb-10">
+          <h1 className="sm:text-2xl font-medium title-font mb-8 text-purple-500">
+            Graphics Work
           </h1>
-          <p className="text-purple-200 leading-relaxed text-left">{app.description}</p>
+          <p className="lg mx-auto leading-relaxed text-base text-white">
+            At the core of creating is a love for design. I've been creating graphics for years and have a passion for creating beautiful and functional designs. I've created logos, business cards, branding materials and apparel and other textile merchandies for clients and friends. I've also created graphics for websites and social media. I love creating graphics and I'm always up for new projects to work on.
+          </p>
+        </div>
+        <div className="flex flex-wrap -m-4">
+          {graphics.map((graphic) => (
+            <div
+              key={graphic.image}
+              className="lg:w-1/4 sm:w-1/3 w-full p-2 group"
+              onClick={() => openModal(graphic.image)}
+              style={{ cursor: "pointer" }}
+            >
+              <div className="flex relative min-h-80">
+                {/* Image is visible by default */}
+                <img
+                  alt="gallery"
+                  className="absolute inset-0 w-full h-full object-cover object-center opacity-100 group-hover:opacity-0"
+                  src={graphic.image}
+                />
+                {/* Text is hidden by default and shown on hover */}
+                <div className="absolute inset-0 px-6 py-6 z-10 w-full h-full border-4 border-gray-800 bg-gray-900 opacity-0 group-hover:opacity-100 flex items-center justify-center">
+                  <div>
+                    <h1 className="title-font text-lg font-medium text-yellow-400 mb-3">
+                      {graphic.title}
+                    </h1>
+                    <p className="text-purple-200 leading-relaxed text-left">
+                      {graphic.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-    </div>
-  ))}
-</div>
-      </div>
+      
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
