@@ -25,7 +25,7 @@ export default function Resume() {
         <div className="flex flex-col w-full mb-20">
           <HiBriefcase className="text-5xl mx-auto inline-block w-10 mb-4 text-purple-500" />
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-pink-500">
-            How I Ended Up Here (Don't Ask)
+            How I Ended Up Here
           </h1>
           <div className="w-full flex justify-center gap-4 mt-4 md:mt-0">
           <a
