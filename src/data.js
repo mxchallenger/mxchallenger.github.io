@@ -3,7 +3,7 @@ export const websites = [
     "title": "Haunted Hotel Booking App",
     "subtitle": "Full-Stack React with Supabase",
     "description": "A full-stack React app for hotel room booking and management, featuring form validation, dynamic image display, and cost calculations based on room rates. Backend powered by Supabase.",
-    "image": "./project-1.gif",
+    // "image": "./project-1.gif",
     "link": "https://mxchallenger.github.io/HauntedHotel/"
   },
   {
@@ -11,7 +11,7 @@ export const websites = [
     subtitle: "Front-End React App & Axios",
     description:
       "Simple weather app that allows users to select a city and measurement unit and get the current weather and 5-day forecast.",
-    image: "./project-2.gif",
+    // image: "./project-2.gif",
     link: "https://mxchallenger.github.io/weather-app/",
     stack: "React, Axios & OpenWeatherMap API",
   },
@@ -20,7 +20,7 @@ export const websites = [
     subtitle: "Wordpress Custom Plugin",
     description:
       "Custom WordPress plugin for Destiny Technologies Intl., featuring custom tables, endpoints, and Microsoft Graph API integration. Manages business activities and employee data with custom reporting, user management, automated SharePoint report saving and email, payroll, and a tailored admin area. Integrates with an Expo/React Native mobile app.",
-    image: "./project-3.gif",
+    // image: "./project-3.gif",
     link: "https://github.com/mxchallenger",
     stack: "Wordpress API, OAuth2.0, PHP, SMTP and Microsoft Graph API",
   },
@@ -29,7 +29,7 @@ export const websites = [
     subtitle: "React Hooks",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-4.gif",
+    // image: "./project-4.gif",
     link: "https://github.com/mxchallenger",
   },
 ];
