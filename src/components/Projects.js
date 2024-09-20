@@ -9,11 +9,13 @@ export default function Projects() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState("");
   const [currentUrl, setCurrentUrl] = useState("");
+  const [currentDescription, setCurrentDescription] = useState("");
   const [stack, setStack] = useState("");
 
-  const openModal = (image, url, stack) => {
+  const openModal = (image, url, description, stack) => {
     setCurrentImage(image);
     setCurrentUrl(url);
+    setCurrentDescription(description);
     setStack(stack);
     setModalIsOpen(true);
   };
@@ -22,7 +24,15 @@ export default function Projects() {
     setModalIsOpen(false);
     setCurrentImage("");
     setCurrentUrl("");
+    setCurrentDescription("");
     setStack("");
+  };
+
+  const truncateText = (text, limit) => {
+    if (text.length > limit) {
+      return text.slice(0, limit) + "...";
+    }
+    return text;
   };
 
   return (
@@ -84,8 +94,8 @@ export default function Projects() {
           {apps.map((app) => (
             <div
               key={app.image}
-              className="lg:w-1/4 sm:w-1/3 w-full p-2 group"
-              onClick={() => openModal(app.image)}
+              className="lg:w-1/3 sm:w-1/2 w-full p-2 group" 
+              onClick={() => openModal(app.image, app.url, app.description, app.stack)}
               style={{ cursor: "pointer" }}
             >
               <div className="flex relative min-h-80">
@@ -98,7 +108,7 @@ export default function Projects() {
                   <h1 className="title-font text-lg font-medium text-yellow-400 mb-3">
                     {app.title}
                   </h1>
-                  <p className="text-purple-200 leading-relaxed text-left">{app.description}</p>
+                  <p className="text-purple-200 leading-relaxed text-left">{truncateText(app.description, 150)}</p>
                 </div>
               </div>
             </div>
@@ -174,7 +184,8 @@ export default function Projects() {
       >
         <div className="relative flex flex-col justify-center items-center w-full h-full">
           {stack && ( <h2 className="tracking-widest text-md title-font font-medium text-green-500 mb-4">Stack: {stack}</h2> )}
-          <img src={currentImage} alt="Full size" className="object-scale-down"/>
+          <img src={currentImage} alt="Full size" className="object-scale-down mb-4" />
+          <p className="text-white mb-4">{currentDescription}</p>
           {currentUrl && (
             <a
               href={currentUrl}

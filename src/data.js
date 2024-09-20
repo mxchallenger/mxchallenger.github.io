@@ -25,12 +25,12 @@ export const websites = [
     stack: "Wordpress API, OAuth2.0, PHP, SMTP and Microsoft Graph API",
   },
   {
-    title: "Epic Todo App",
-    subtitle: "React Hooks",
+    title: "Ranger S5",
+    subtitle: "Wordpress E-Commerce Site",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "Client website for a small e-commerce business built on WordPress using WooCommerce integrating customized theming, plugins and payment options. Hosted on Flywheel and maintained by Destiny Technologies Intl.",
     // image: "./project-4.gif",
-    link: "https://github.com/mxchallenger",
+    link: "https://rangers5.com",
   },
 ];
 
@@ -39,9 +39,27 @@ export const apps = [
     title: "Sentinel-Suite",
     subtitle: "Expo Mobile App",
     description:
-      "A full-featured mobile app for timekeeping, tracking, managing and reporting on-site security patrols.",
+      "A full-featured mobile app for timekeeping, tracking, managing and reporting on-site security patrols. Deployed to full production on the Google Play Store and Apple App Store with internal test tracks, public listings and unlisted apps. This app interfaces with the custom plugin that I built for our Wordpress site to allow our staff to create and submit site reports from their phones.  This ensures real-time reporting and ensures HR compliance with local labor laws.",
     image: "./mobile-app-1.gif",
-    link: "https://github.com/mxchallenger",
+    link: "https://apps.apple.com/app/ewcgi-mobile-app/id6501969507",
+    stack: "Expo, React Native, Microsoft Graph API, Wordpress API",
+  },
+  {
+    title: "Sentinel-Suite",
+    subtitle: "Expo Mobile App",
+    description:
+      "A full-featured mobile app for timekeeping, tracking, managing and reporting on-site security patrols. Deployed to full production on the Google Play Store and Apple App Store with internal test tracks, public listings and unlisted apps. This app interfaces with the custom plugin that I built for our Wordpress site to allow our staff to create and submit site reports from their phones.  This ensures real-time reporting and ensures HR compliance with local labor laws.",
+    image: "./mobile-app-1.gif",
+    link: "https://apps.apple.com/app/ewcgi-mobile-app/id6501969507",
+    stack: "Expo, React Native, Microsoft Graph API, Wordpress API",
+  },
+  {
+    title: "Sentinel-Suite",
+    subtitle: "Expo Mobile App",
+    description:
+      "A full-featured mobile app for timekeeping, tracking, managing and reporting on-site security patrols. Deployed to full production on the Google Play Store and Apple App Store with internal test tracks, public listings and unlisted apps. This app interfaces with the custom plugin that I built for our Wordpress site to allow our staff to create and submit site reports from their phones.  This ensures real-time reporting and ensures HR compliance with local labor laws.",
+    image: "./mobile-app-1.gif",
+    link: "https://apps.apple.com/app/ewcgi-mobile-app/id6501969507",
     stack: "Expo, React Native, Microsoft Graph API, Wordpress API",
   },
 ];
