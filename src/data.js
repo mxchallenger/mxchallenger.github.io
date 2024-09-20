@@ -44,24 +44,24 @@ export const apps = [
     link: "https://apps.apple.com/app/ewcgi-mobile-app/id6501969507",
     stack: "Expo, React Native, Microsoft Graph API, Wordpress API",
   },
-  {
-    title: "Sentinel-Suite",
-    subtitle: "Expo Mobile App",
-    description:
-      "A full-featured mobile app for timekeeping, tracking, managing and reporting on-site security patrols. Deployed to full production on the Google Play Store and Apple App Store with internal test tracks, public listings and unlisted apps. This app interfaces with the custom plugin that I built for our Wordpress site to allow our staff to create and submit site reports from their phones.  This ensures real-time reporting and ensures HR compliance with local labor laws.",
-    image: "./mobile-app-1.gif",
-    link: "https://apps.apple.com/app/ewcgi-mobile-app/id6501969507",
-    stack: "Expo, React Native, Microsoft Graph API, Wordpress API",
-  },
-  {
-    title: "Sentinel-Suite",
-    subtitle: "Expo Mobile App",
-    description:
-      "A full-featured mobile app for timekeeping, tracking, managing and reporting on-site security patrols. Deployed to full production on the Google Play Store and Apple App Store with internal test tracks, public listings and unlisted apps. This app interfaces with the custom plugin that I built for our Wordpress site to allow our staff to create and submit site reports from their phones.  This ensures real-time reporting and ensures HR compliance with local labor laws.",
-    image: "./mobile-app-1.gif",
-    link: "https://apps.apple.com/app/ewcgi-mobile-app/id6501969507",
-    stack: "Expo, React Native, Microsoft Graph API, Wordpress API",
-  },
+  // {
+  //   title: "Sentinel-Suite",
+  //   subtitle: "Expo Mobile App",
+  //   description:
+  //     "A full-featured mobile app for timekeeping, tracking, managing and reporting on-site security patrols. Deployed to full production on the Google Play Store and Apple App Store with internal test tracks, public listings and unlisted apps. This app interfaces with the custom plugin that I built for our Wordpress site to allow our staff to create and submit site reports from their phones.  This ensures real-time reporting and ensures HR compliance with local labor laws.",
+  //   image: "./mobile-app-1.gif",
+  //   link: "https://apps.apple.com/app/ewcgi-mobile-app/id6501969507",
+  //   stack: "Expo, React Native, Microsoft Graph API, Wordpress API",
+  // },
+  // {
+  //   title: "Sentinel-Suite",
+  //   subtitle: "Expo Mobile App",
+  //   description:
+  //     "A full-featured mobile app for timekeeping, tracking, managing and reporting on-site security patrols. Deployed to full production on the Google Play Store and Apple App Store with internal test tracks, public listings and unlisted apps. This app interfaces with the custom plugin that I built for our Wordpress site to allow our staff to create and submit site reports from their phones.  This ensures real-time reporting and ensures HR compliance with local labor laws.",
+  //   image: "./mobile-app-1.gif",
+  //   link: "https://apps.apple.com/app/ewcgi-mobile-app/id6501969507",
+  //   stack: "Expo, React Native, Microsoft Graph API, Wordpress API",
+  // },
 ];
 
 export const graphics = [
