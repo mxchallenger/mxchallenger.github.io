@@ -67,15 +67,12 @@ export const apps = [
 export const graphics = [
   {
     title: "Military Flight Branding Logo",
-    subtitle: "Expo Mobile App",
     description:
       "Created for squadron branding for the 318th Recruiting Squadron.",
     image: "./graphic-dagger.png",
-    stack: "Expo, React Native, Microsoft Graph API, Wordpress API",
   },
   {
     title: "Military Flight Branding Logo",
-    subtitle: "Expo Mobile App",
     description:
       "Created for squadron branding for the 318th Recruiting Squadron.",
     image: "./graphic-firebird.png",

@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { websites, apps, graphics } from "../data";
 import { HiCode } from "react-icons/hi";
-import Modal from 'react-modal';
-
-Modal.setAppElement('#root'); // Add this line to avoid screen reader warnings
+import { WebModal, AppModal, GraphicModal } from "./Modals";
 
 export default function Projects() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -11,8 +9,11 @@ export default function Projects() {
   const [currentUrl, setCurrentUrl] = useState("");
   const [currentDescription, setCurrentDescription] = useState("");
   const [stack, setStack] = useState("");
+  const [modalType, setModalType] = useState("");
 
-  const openModal = (image, url, description, stack) => {
+
+  const openModal = (type, image, url, description, stack = "") => {
+    setModalType(type);
     setCurrentImage(image);
     setCurrentUrl(url);
     setCurrentDescription(description);
@@ -56,32 +57,32 @@ export default function Projects() {
           </p>
         </div>
         <div className="flex flex-wrap -m-8">
-          {websites.map((website) => (
-            <div
-              key={website.image}
-              className="sm:w-1/2 w-100 p-2 group"
-              onClick={() => openModal(website.image, website.link, website.stack)}
-              style={{ cursor: "pointer" }}
-            >
-              <div className="flex relative min-h-56 ">
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-top opacity-0 group-hover:opacity-100"
-                  src={website.image}
-                />
-                <div className="px-8 py-6 relative z-10 w-full border-4 border-gray-800 bg-gray-900 group-hover:opacity-0">
-                  <h2 className="tracking-widest text-sm title-font font-normal text-yellow-400 mb-1">
-                    {website.subtitle}
-                  </h2>
-                  <h1 className="title-font text-xl font-semibold text-white mb-3">
-                    {website.title}
-                  </h1>
-                  <p className="text-justify leading-relaxed">{website.description}</p>
-                </div>
-              </div>
-            </div>
-          ))}
+  {websites.map((website) => (
+    <div
+      key={website.image}
+      className="sm:w-1/2 w-100 p-2 group"
+      onClick={() => openModal("website", website.image, website.link, website.description, website.stack)}
+      style={{ cursor: "pointer" }}
+    >
+      <div className="flex relative min-h-56 ">
+        <img
+          alt="gallery"
+          className="absolute inset-0 w-full h-full object-cover object-top opacity-0 group-hover:opacity-100"
+          src={website.image}
+        />
+        <div className="px-8 py-6 relative z-10 w-full border-4 border-gray-800 bg-gray-900 group-hover:opacity-0">
+          <h2 className="tracking-widest text-sm title-font font-normal text-yellow-400 mb-1">
+            {website.subtitle}
+          </h2>
+          <h1 className="title-font text-xl font-semibold text-white mb-3">
+            {website.title}
+          </h1>
+          <p className="text-justify leading-relaxed">{website.description}</p>
         </div>
+      </div>
+    </div>
+  ))}
+</div>
         <div className="flex flex-col text-left w-full mt-20 mb-10">
           <h1 className="sm:text-2xl font-medium title-font mb-8 text-purple-500">
             Mobile Applications
@@ -95,7 +96,7 @@ export default function Projects() {
             <div
               key={app.image}
               className="lg:w-1/3 sm:w-1/2 w-full p-2 group" 
-              onClick={() => openModal(app.image, app.url, app.description, app.stack)}
+              onClick={() => openModal("app", app.image, app.link, app.description, app.stack)}
               style={{ cursor: "pointer" }}
             >
               <div className="flex relative min-h-80">
@@ -127,7 +128,7 @@ export default function Projects() {
             <div
               key={graphic.image}
               className="lg:w-1/4 sm:w-1/3 w-full p-2 group"
-              onClick={() => openModal(graphic.image)}
+              onClick={() => openModal("graphic", graphic.image, graphic.description)}
               style={{ cursor: "pointer" }}
             >
               <div className="flex relative min-h-80">
@@ -153,52 +154,35 @@ export default function Projects() {
           ))}
         </div>
       </div>
-      
-      <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
-        style={{
-          content: {
-            top: '50%',
-            left: '50%',
-            right: 'auto',
-            bottom: 'auto',
-            marginRight: '-50%',
-            transform: 'translate(-50%, -50%)',
-            backgroundColor: '#333',
-            border: '1px solid #ccc',
-            padding: '20px',
-            zIndex: '1000',
-            maxWidth: '90%',
-            maxHeight: '90%',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            overflow: 'auto'
-          },
-          overlay: {
-            backgroundColor: 'rgba(0, 0, 0, 0.75)',
-            zIndex: '1000'
-          }
-        }}
-      >
-        <div className="relative flex flex-col justify-center items-center w-full h-full">
-          {stack && ( <h2 className="tracking-widest text-md title-font font-medium text-green-500 mb-4">Stack: {stack}</h2> )}
-          <img src={currentImage} alt="Full size" className="object-scale-down mb-4" />
-          <p className="text-white mb-4">{currentDescription}</p>
-          {currentUrl && (
-            <a
-              href={currentUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="absolute bottom-0 mb-4 bg-pink-500 hover:bg-pink-400 text-white font-bold py-2 px-4 rounded"
-              style={{ transform: 'translateY(50%)' }}
-            >
-              See it Live
-            </a>
-          )}
-        </div>
-      </Modal>
+              {/* Modals */}
+      {modalType === "website" && (
+        <WebModal
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          image={currentImage}
+          url={currentUrl}
+          description={currentDescription}
+          stack={stack}
+        />
+      )}
+      {modalType === "app" && (
+        <AppModal
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          image={currentImage}
+          url={currentUrl}
+          description={currentDescription}
+          stack={stack}
+        />
+      )}
+      {modalType === "graphic" && (
+        <GraphicModal
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          image={currentImage}
+          description={currentDescription}
+        />
+      )}
     </section>
   );
 }
