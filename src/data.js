@@ -1,10 +1,11 @@
 export const websites = [
   {
-    "title": "Haunted Hotel Booking App",
-    "subtitle": "Full-Stack React with Supabase",
-    "description": "A full-stack React app for hotel room booking and management, featuring form validation, dynamic image display, and cost calculations based on room rates. Backend powered by Supabase.",
-    "image": "./haunted-hotel.gif",
-    "link": "https://mxchallenger.github.io/HauntedHotel/"
+    title: "Haunted Hotel Booking App",
+    subtitle: "Full-Stack React with Supabase",
+    description: "A full-stack React app for hotel room booking and management, featuring form validation, dynamic image display, and cost calculations based on room rates. Backend powered by Supabase.",
+    image: "./haunted-hotel.gif",
+    link: "https://mxchallenger.github.io/HauntedHotel/",
+    stack: "React & Supabase",
   },
   {
     title: "React Weather App",
@@ -36,7 +37,7 @@ export const websites = [
 
 export const apps = [
   {
-    title: "Sentinel-Suite",
+    title: "Sentinel Suite",
     subtitle: "Expo Mobile App",
     description:
       "A full-featured mobile app for timekeeping, tracking, managing and reporting on-site security patrols. Deployed to full production on the Google Play Store and Apple App Store with internal test tracks, public listings and unlisted apps. This app interfaces with the custom plugin that I built for our Wordpress site to allow our staff to create and submit site reports from their phones.  This ensures real-time reporting and ensures HR compliance with local labor laws.",
@@ -44,15 +45,15 @@ export const apps = [
     link: "https://apps.apple.com/app/ewcgi-mobile-app/id6501969507",
     stack: "Expo, React Native, Microsoft Graph API, Wordpress API",
   },
-  // {
-  //   title: "Sentinel-Suite",
-  //   subtitle: "Expo Mobile App",
-  //   description:
-  //     "A full-featured mobile app for timekeeping, tracking, managing and reporting on-site security patrols. Deployed to full production on the Google Play Store and Apple App Store with internal test tracks, public listings and unlisted apps. This app interfaces with the custom plugin that I built for our Wordpress site to allow our staff to create and submit site reports from their phones.  This ensures real-time reporting and ensures HR compliance with local labor laws.",
-  //   image: "./mobile-app-1.gif",
-  //   link: "https://apps.apple.com/app/ewcgi-mobile-app/id6501969507",
-  //   stack: "Expo, React Native, Microsoft Graph API, Wordpress API",
-  // },
+  {
+    title: "Teacher Library",
+    subtitle: "Expo Mobile App",
+    description:
+      "An app prototype for teachers to scan barcodes or search for ISBN numbers from classroom books to create a virtual library list. Currently, the app stores library in AsyncStorage but future development includes Supabase integration for a full-stack mobile app. App can be tested on your personal device using the link below with the Expo Go app, no login or account necessary.",
+    image: "./mobile-app-1.gif",
+    link: "https://expo.dev/preview/update?message=scanner%20updated%2C%20isbn%20state%20updated%2C%20expo%20added&updateRuntimeVersion=1.0.0&createdAt=2024-09-25T18%3A24%3A36.062Z&slug=exp&projectId=f7a2db81-9bd0-4644-bd3f-199ba7a8cc9a&group=ae80deca-ea8a-4e87-a4a1-509ede19d5f8",
+    stack: "Expo, React Native, OpenLibrary API",
+  },
   // {
   //   title: "Sentinel-Suite",
   //   subtitle: "Expo Mobile App",
@@ -76,7 +77,6 @@ export const graphics = [
     description:
       "Created for squadron branding for the 318th Recruiting Squadron.",
     image: "./graphic-firebird.png",
-    stack: "Expo, React Native, Microsoft Graph API, Wordpress API",
   },
   {
     title: "Mobile App Graphics",

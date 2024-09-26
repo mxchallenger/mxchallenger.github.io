@@ -23,7 +23,7 @@ export default function Resume() {
     <section id="resume" className="text-green-500 bg-gray-900 body-font">
       <div className="container px-5 py-10 mx-auto text-center lg:px-40">
         <div className="flex flex-col w-full mb-20">
-          <HiBriefcase className="text-5xl mx-auto inline-block w-10 mb-4 text-purple-500" />
+          <HiBriefcase className="text-5xl mx-auto inline-block w-10 mb-4 text-green-500" />
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-pink-500">
             How I Ended Up Here
           </h1>

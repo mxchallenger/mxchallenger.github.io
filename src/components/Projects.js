@@ -8,16 +8,27 @@ export default function Projects() {
   const [currentImage, setCurrentImage] = useState("");
   const [currentUrl, setCurrentUrl] = useState("");
   const [currentDescription, setCurrentDescription] = useState("");
+  const [currentTitle, setCurrentTitle] = useState("");
   const [stack, setStack] = useState("");
   const [modalType, setModalType] = useState("");
 
 
-  const openModal = (type, image, url, description, stack = "") => {
+  const openModal = (type, image, url, description, stack, title = "") => {
+    // Log all the values being passed to the modal
+    // console.log("Modal Type:", type);
+    // console.log("Image:", image);
+    // console.log("URL:", url);
+    // console.log("Description:", description);
+    // console.log("Stack:", stack);
+    // console.log("Title:", title);
+  
+    // Set the modal values
     setModalType(type);
-    setCurrentImage(image);
-    setCurrentUrl(url);
-    setCurrentDescription(description);
-    setStack(stack);
+    setCurrentImage(image || "");
+    setCurrentUrl(url || "");
+    setCurrentDescription(description || "");
+    setStack(stack || "");
+    setCurrentTitle(title || "");
     setModalIsOpen(true);
   };
 
@@ -27,6 +38,7 @@ export default function Projects() {
     setCurrentUrl("");
     setCurrentDescription("");
     setStack("");
+    setCurrentTitle("");
   };
 
   const truncateText = (text, limit) => {
@@ -57,9 +69,9 @@ export default function Projects() {
           </p>
         </div>
         <div className="flex flex-wrap -m-8">
-  {websites.map((website) => (
+  {websites.map((website, index) => (
     <div
-      key={website.image}
+    key={`${website.image}-${index}`}
       className="sm:w-1/2 w-100 p-2 group"
       onClick={() => openModal("website", website.image, website.link, website.description, website.stack)}
       style={{ cursor: "pointer" }}
@@ -92,9 +104,9 @@ export default function Projects() {
           </p>
         </div>
         <div className="flex flex-wrap -m-4">
-          {apps.map((app) => (
+          {apps.map((app, index) => (
             <div
-              key={app.image}
+            key={`${app.image}-${index}`}
               className="lg:w-1/3 sm:w-1/2 w-full p-2 group" 
               onClick={() => openModal("app", app.image, app.link, app.description, app.stack)}
               style={{ cursor: "pointer" }}
@@ -116,7 +128,7 @@ export default function Projects() {
           ))}
         </div>
         <div className="flex flex-col text-left w-full mt-20 mb-10">
-          <h1 className="sm:text-2xl font-medium title-font mb-8 text-purple-500">
+          <h1 className="sm:text-2xl font-medium title-font mb-8 text-blue-500">
             Graphics Work
           </h1>
           <p className="lg mx-auto leading-relaxed text-base text-white">
@@ -124,21 +136,19 @@ export default function Projects() {
           </p>
         </div>
         <div className="flex flex-wrap -m-4">
-          {graphics.map((graphic) => (
+          {graphics.map((graphic, index) => (
             <div
-              key={graphic.image}
+            key={`${graphic.image}-${index}`}
               className="lg:w-1/4 sm:w-1/3 w-full p-2 group"
-              onClick={() => openModal("graphic", graphic.image, graphic.description)}
+              onClick={() => openModal("graphic", graphic.image, "", graphic.description, "", graphic.title,)}
               style={{ cursor: "pointer" }}
             >
               <div className="flex relative min-h-80">
-                {/* Image is visible by default */}
                 <img
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center opacity-100 group-hover:opacity-0"
                   src={graphic.image}
                 />
-                {/* Text is hidden by default and shown on hover */}
                 <div className="absolute inset-0 px-6 py-6 z-10 w-full h-full border-4 border-gray-800 bg-gray-900 opacity-0 group-hover:opacity-100 flex items-center justify-center">
                   <div>
                     <h1 className="title-font text-lg font-medium text-yellow-400 mb-3">
@@ -179,6 +189,7 @@ export default function Projects() {
         <GraphicModal
           isOpen={modalIsOpen}
           onRequestClose={closeModal}
+          title={currentTitle}
           image={currentImage}
           description={currentDescription}
         />
