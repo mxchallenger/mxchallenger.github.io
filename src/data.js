@@ -29,7 +29,7 @@ export const websites = [
     title: "Ranger S5",
     subtitle: "Wordpress E-Commerce Site",
     description:
-      "Client website for a small e-commerce business built on WordPress using WooCommerce integrating customized theming, plugins and payment options. Hosted on Flywheel and maintained by Destiny Technologies Intl.",
+      "Client website for a small e-commerce business built on WordPress using WooCommerce integrating customized theming, plugins and payment options. Hosted on Flywheel and maintained by Destiny Technologies Intl. Built with the intention of making the client's life easier with easy to maintain components, themes and integrations decreasing the admin overhead.",
     image: "./rangers5.gif",
     link: "https://rangers5.com",
   },
