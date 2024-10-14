@@ -52,11 +52,12 @@ export default function Resume() {
               <Card
               key={index}
               title={item.title}
-              organization={item.organization}  // Ensure this is being passed
+              organization={item.organization}
               location={item.location}
               degree={item.degree}
               dates={item.dates}
               description={item.description}
+              courses={item.courses}
               image={item.image}
               link={item.link}
               category={item.category}

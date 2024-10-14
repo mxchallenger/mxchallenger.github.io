@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Card = ({ title, organization, location, degree, dates, description, image, link, category }) => {
+const Card = ({ title, organization, location, certification, degree, dates, description, courses, image, link, category }) => {
+  console.log(courses);
   const [isExpanded, setIsExpanded] = React.useState(false);
 
   const toggleExpand = () => {
@@ -13,7 +14,7 @@ const Card = ({ title, organization, location, degree, dates, description, image
     }
     return text.slice(0, limit) + '...';  // Truncate and add ellipsis
   };
-  
+
   let bgColorClass = '';
 
   switch (category) {
@@ -48,6 +49,7 @@ const Card = ({ title, organization, location, degree, dates, description, image
         <h2 className="text-2xl font-semibold mb-2 text-purple-600 pt-2">{title}</h2>
         {organization && <h3 className="text-gray-600 text-base mb-2 font-semibold">{organization}</h3>}
         {location && <p className="text-gray-600 text-sm mb-2">{location}</p>}
+        {certification && <p className="text-gray-600 text-sm mb-2"><strong>Certification:</strong> {certification}</p>}
         {degree && <p className="text-gray-600 text-sm mb-2">{degree}</p>}
         {dates && <p className="text-gray-600 text-sm mb-2">{dates}</p>}
 
@@ -58,6 +60,16 @@ const Card = ({ title, organization, location, degree, dates, description, image
 
         {isExpanded && (
           <div className="mt-4">
+            {/* Courses Section */}
+            {courses && <h3 className="text-gray-600 text-base mb-2 font-semibold">Courses Completed</h3>}
+            {courses && (
+              <ul className="list-disc ml-5 text-left">
+                {courses.map((course, index) => (
+                  <li key={index} className="text-gray-800">{course}</li>
+                ))}
+              </ul>
+            )}
+
             {image && (
               <img
                 src={image}
