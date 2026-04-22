@@ -195,6 +195,16 @@ export const skills = [
 
 export const resume = [
   {
+    title: "Senior Software Engineer",
+    organization: "Wells Fargo",
+    location: "Remote",
+    dates: "Dec 2024 - Present",
+    description: "Harness CICD Engineer, Adoption & Enablement Engineer, Power Query Magician - The oompa loompas behind the curtains, we supervise and craft the pathways for tens of thousands of deployments daily.",
+    link: "https://www.wellsfargo.com",
+    category: "work",
+    // image: "http://destinytech.org/wp-content/uploads/2023/02/Destiny-Tech-Horizontal-Large-3.png"
+  },
+  {
     title: "Lead Developer",
     organization: "Destiny Technologies Intl.",
     location: "Remote",
@@ -207,7 +217,7 @@ export const resume = [
   {
     title: "Key Support Liaison",
     organization: "US Air Force",
-    dates: "2024",
+    dates: "2024 - Present",
     description: "Key Support Liaison for the 318th Recruiting Squadron. Serve as a focal point for communication and advocate for families.",
     link: "https://www.afpc.af.mil/Military-and-Family/Commanders-Key-Support-Program/",
     category: "volunteer",
@@ -220,6 +230,15 @@ export const resume = [
     link: "https://www.pwsi.org/",
     category: "volunteer",
     image: "./volunteer-pandas.png"
+  },
+  {
+    title: "Assistant Softball Coach",
+    organization: "Prince William Girls Fastpitch Softball",
+    dates: "Spring 2026",
+    description: "Assistant Coach to 8U Dirt Divas",
+    link: "https://www.pwgfs.org/",
+    category: "volunteer",
+    // image: "./volunteer-pandas.png"
   },
   {
     title: "Software Apprentice",
